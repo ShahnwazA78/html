@@ -1,0 +1,241 @@
+/*-----------------------All-------------------*/
+:root {
+    --bg-color: #46d7ac;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*-----------------------Body-------------------*/
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+
+/*-----------------------Header-------------------*/
+
+header {
+    /* border: 1px solid #5072A7; */
+    height: 2.4rem;
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+
+
+
+}
+
+.header {
+    height: 100%;
+    text-align: center;
+    padding: 0.4rem;
+    color: #fff;
+    font: 500 1.2rem arial;
+    box-sizing: border-box;
+
+}
+
+/*-----------------------Main-------------------*/
+
+
+main {
+    /* border: 3px solid blue; */
+    min-height: 33.5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+/*-----------------------Left Form-Container-------------------*/
+
+.form_container {
+    /* border: 3px solid red; */
+    min-width: 50%;
+    min-height: 30rem;
+    box-sizing: border-box;
+}
+
+form {
+    /* border: 3px solid greenyellow; */
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+/*-----------------------Middle Line-------------------*/
+
+
+.vertical-line {
+    position: absolute;
+    height: 26rem;
+    top: 4rem;
+    left: 50%;
+    width: 3px;
+    background-color: var(--bg-color);
+}
+
+
+/*-----------------------Right Table Container-------------------*/
+
+.container {
+    /* border: 10px solid black; */
+    height: 20.3rem;
+    padding: 0 2rem 0 2rem !important;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.table_container {
+    /* border: 3px solid darkred; */
+    min-width: 50%;
+    min-height: 30rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+table {
+    justify-content: center;
+    overflow: auto;
+}
+
+.table_container>h3 {
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+    font: 600 1.2rem arial;
+}
+
+.table_data {
+    justify-self: center;
+    width: 30rem;
+}
+
+
+thead>tr {
+    border: 2px solid #a8ca42;
+    background-color: #a8ca42;
+    color: white;
+    font: bold 14px arial;
+    position: sticky;
+    top: -3px !important;
+    box-sizing: border-box;
+}
+
+
+
+.row_data {
+    min-height: 7rem;
+    min-width: 14rem;
+    max-width: 24em;
+}
+
+.row_data>span:nth-child(1) {
+    font-weight: 500;
+}
+
+.table>tbody>tr:nth-child(odd)>td {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.table>tbody>tr:nth-child(even)>td {
+    background-color: #ebf2d3;
+}
+
+th,
+td {
+
+    border: 3px solid #a8ca42 !important;
+}
+
+.image {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-height: 7rem;
+    max-width: 6rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*-----------------------All Span tags Inside the Table-------------------*/
+
+
+.container span {
+
+    display: block;
+    line-height: 19px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+/*-----------------------Footer-------------------*/
+
+
+footer {
+    height: 1.63rem;
+    border: 1px solid;
+    background-color: var(--bg-color);
+}
+
+.footer {
+    text-align: center;
+    color: white;
+}
+
+/*-----------------------Media Quries-------------------*/
+
+
+@media screen and (max-width:1214px) {
+    .form_container {
+        /* border: 3px solid red; */
+        width: 100%;
+        min-height: 30rem;
+        box-sizing: border-box;
+
+    }
+
+    .table_container {
+        /* border: 3px solid darkred; */
+        min-width: 100%;
+        min-height: 30rem;
+
+    }
+    .vertical-line {
+        display: none ;
+    }
+
+
+}
+
+@media screen and (max-width:494px) {
+    .btn3 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}
